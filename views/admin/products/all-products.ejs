@@ -2,6 +2,7 @@
 <link rel="stylesheet" href="/styles/products.css">
 <script src="/scripts/product-management.js" defer></script>
 </head>
+
 <body>
   <%- include('../../shared/includes/header') %>
   <main>
@@ -15,11 +16,11 @@
     <section>
       <ul id="products-grid">
         <% for (const product of products) { %>
-          <li>
-            <%- include('../../shared/includes/product-item', { product: product }) %>
-          </li>
+        <li>
+          <%- include('../../shared/includes/product-item', { product: product }) %>
+        </li>
         <% } %>
       </ul>
     </section>
   </main>
-<%- include('../../shared/includes/footer') %>
+  <%- include('../../shared/includes/footer') %>
